@@ -17,19 +17,19 @@ app.get('/fibo',(req, res) => {
 })
 
 function fibonacci(num) {  
-  var fibonaccis = [];
+        var fibonacci = [];
         var anterior= 0;
         var siguiente= 1;
     resultado = parseInt(anterior)+parseInt(siguiente);
   
   for (let i=0; i< num ;i++){
-    resultado = anterior + siguiente;
-    anterior = siguiente;
-    siguiente = resultado;
+        resultado = anterior + siguiente;
+        anterior = siguiente;
+        siguiente = resultado;
 
     fibonacci.push(resultado);
 }
-    return fibonacci;
+        return fibonacci;
 }
 
 app.listen(2021, () => {
